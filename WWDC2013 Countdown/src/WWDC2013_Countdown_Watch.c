@@ -116,9 +116,6 @@ void handle_init(AppContextRef ctx)
 	
 	text_layer_set_font(&countdownHMSTextLayer, fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_APPLE_REGULAR_30)));
 	layer_add_child(&window.layer, &countdownHMSTextLayer.layer);
-	
-	// set initial values
-//	update_countdown();
 }
 
 void handle_tick(AppContextRef ctx, PebbleTickEvent *t)
