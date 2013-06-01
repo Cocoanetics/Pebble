@@ -1,0 +1,3 @@
+[submodule "Externals/mini-printf"]
+	path = Externals/mini-printf
+	url = https://github.com/mludvig/mini-printf.git

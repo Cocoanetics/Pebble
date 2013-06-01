@@ -1,0 +1,203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A7D7A838175A62F200B56101 /* Pebble Watch Face */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A7D7A839175A62F200B56101 /* Build configuration list for PBXAggregateTarget "Pebble Watch Face" */;
+			buildPhases = (
+				A7D7A848175A64F600B56101 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Pebble Watch Face";
+			productName = "Pebble Watch Face";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		A7D7A83D175A634300B56101 /* WWDC2013_Countdown_Watch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = WWDC2013_Countdown_Watch.c; sourceTree = "<group>"; };
+		A7D7A843175A635600B56101 /* pebble_app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pebble_app.h; sourceTree = "<group>"; };
+		A7D7A844175A635600B56101 /* pebble_app_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pebble_app_info.h; sourceTree = "<group>"; };
+		A7D7A845175A635600B56101 /* pebble_fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pebble_fonts.h; sourceTree = "<group>"; };
+		A7D7A846175A635600B56101 /* pebble_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pebble_os.h; sourceTree = "<group>"; };
+		A7D7A847175A635600B56101 /* pebble_os.h.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pebble_os.h.orig; sourceTree = "<group>"; };
+		A7D7A84F175A731600B56101 /* resource_map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resource_map.json; sourceTree = "<group>"; };
+		A7D7A850175A731600B56101 /* wscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wscript; sourceTree = "<group>"; };
+		A7D7A853175A7F7200B56101 /* MyriadPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.ttf"; sourceTree = "<group>"; };
+		A7D7A854175A7F7200B56101 /* MyriadPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.ttf"; sourceTree = "<group>"; };
+		A7D7A856175A7F7200B56101 /* menu_apple_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu_apple_logo.png; sourceTree = "<group>"; };
+		A7D7A857175A7F7200B56101 /* wwdc2013_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wwdc2013_logo.png; sourceTree = "<group>"; };
+		A7D7A858175A8F0D00B56101 /* mini-printf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "mini-printf.c"; sourceTree = "<group>"; };
+		A7D7A859175A8F0D00B56101 /* mini-printf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "mini-printf.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A7D7A831175A62DB00B56101 = {
+			isa = PBXGroup;
+			children = (
+				A7D7A84B175A731600B56101 /* resources */,
+				A7D7A842175A635600B56101 /* include */,
+				A7D7A83C175A634300B56101 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		A7D7A83C175A634300B56101 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7A859175A8F0D00B56101 /* mini-printf.h */,
+				A7D7A858175A8F0D00B56101 /* mini-printf.c */,
+				A7D7A83D175A634300B56101 /* WWDC2013_Countdown_Watch.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A7D7A842175A635600B56101 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7A843175A635600B56101 /* pebble_app.h */,
+				A7D7A844175A635600B56101 /* pebble_app_info.h */,
+				A7D7A845175A635600B56101 /* pebble_fonts.h */,
+				A7D7A846175A635600B56101 /* pebble_os.h */,
+				A7D7A847175A635600B56101 /* pebble_os.h.orig */,
+			);
+			name = include;
+			path = "../../../pebble-dev/PebbleKit-v1.1.1/Pebble/sdk/include";
+			sourceTree = "<group>";
+		};
+		A7D7A84B175A731600B56101 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7A84C175A731600B56101 /* src */,
+				A7D7A850175A731600B56101 /* wscript */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		A7D7A84C175A731600B56101 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7A852175A7F7200B56101 /* fonts */,
+				A7D7A855175A7F7200B56101 /* images */,
+				A7D7A84F175A731600B56101 /* resource_map.json */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A7D7A852175A7F7200B56101 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7A853175A7F7200B56101 /* MyriadPro-Bold.ttf */,
+				A7D7A854175A7F7200B56101 /* MyriadPro-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		A7D7A855175A7F7200B56101 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7A856175A7F7200B56101 /* menu_apple_logo.png */,
+				A7D7A857175A7F7200B56101 /* wwdc2013_logo.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		A7D7A832175A62DB00B56101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = A7D7A835175A62DB00B56101 /* Build configuration list for PBXProject "WWDC 2013 Countdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A7D7A831175A62DB00B56101;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7D7A838175A62F200B56101 /* Pebble Watch Face */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7D7A848175A64F600B56101 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./waf build";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A7D7A836175A62DB00B56101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Debug;
+		};
+		A7D7A837175A62DB00B56101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Release;
+		};
+		A7D7A83A175A62F200B56101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A7D7A83B175A62F200B56101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7D7A835175A62DB00B56101 /* Build configuration list for PBXProject "WWDC 2013 Countdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D7A836175A62DB00B56101 /* Debug */,
+				A7D7A837175A62DB00B56101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7D7A839175A62F200B56101 /* Build configuration list for PBXAggregateTarget "Pebble Watch Face" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7D7A83A175A62F200B56101 /* Debug */,
+				A7D7A83B175A62F200B56101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7D7A832175A62DB00B56101 /* Project object */;
+}
