@@ -21,21 +21,20 @@ TextLayer countdownHMSTextLayer;
 
 BmpContainer imageContainer;
 
-#define TIME_STR_BUFFER_BYTES 32
-char s_time_str_buffer[TIME_STR_BUFFER_BYTES];
-char s_days_str_buffer[TIME_STR_BUFFER_BYTES];
-
+// needs to be global because of delayed drawing
+char dayLineBuffer[30];
+char timeLineBuffer[30];
 
 // get a time stamp from a pebble time struct
-long timestampFromTime(PblTm time)
+long long timestampFromTime(PblTm time)
 {
 	return (((time.tm_mday * 24) + time.tm_hour) * 60 + time.tm_min) * 60 + time.tm_sec;
 }
 
-long timeintervalBetweenTimes(PblTm time1, PblTm time0)
+long long timeintervalBetweenTimes(PblTm time1, PblTm time0)
 {
-	long timestamp1 = timestampFromTime(time1);
-	long timestamp0 = timestampFromTime(time0);
+	long long timestamp1 = timestampFromTime(time1);
+	long long timestamp0 = timestampFromTime(time0);
 	
 	return timestamp1 - timestamp0;
 }
@@ -47,7 +46,6 @@ void update_countdown()
 	PblTm now;
 	get_time(&now);
 	
-	
 	PblTm keynote_time;
 	keynote_time.tm_mday = 10;
 	keynote_time.tm_hour = 19;
@@ -58,20 +56,20 @@ void update_countdown()
 	
 	if (days==1)
 	{
-		strcpy(s_days_str_buffer, "1 day");
+		strcpy(dayLineBuffer, "1 day");
 	}
 	else
 	{
-		snprintf(s_days_str_buffer, sizeof(s_days_str_buffer), "%d days", days);
+		snprintf(dayLineBuffer, sizeof(dayLineBuffer), "%d days", days);
 	}
 	
-	text_layer_set_text(&countdownDaysTextLayer, s_days_str_buffer);
+	text_layer_set_text(&countdownDaysTextLayer, dayLineBuffer);
 
 	seconds_til_keynote -= days * (24*60*60);
 	
-	snprintf(s_time_str_buffer, sizeof(s_time_str_buffer), "%02d:%02d:%02d", (seconds_til_keynote/3600), (seconds_til_keynote/60)%60, seconds_til_keynote%60);
+	snprintf(timeLineBuffer, sizeof(timeLineBuffer), "%02d:%02d:%02d", (seconds_til_keynote/3600), (seconds_til_keynote/60)%60, seconds_til_keynote%60);
 	
-	text_layer_set_text(&countdownHMSTextLayer, s_time_str_buffer);
+	text_layer_set_text(&countdownHMSTextLayer, timeLineBuffer);
 }
 
 void handle_init(AppContextRef ctx)

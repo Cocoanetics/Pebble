@@ -15,11 +15,13 @@
 			  ,
 			  {
 			  "type": "font",
+			  "characterRegex": "[:0-9]",
 			  "defName": "FONT_APPLE_REGULAR_30",
 			  "file": "fonts/MyriadPro-Regular.ttf"
 			  },
 			  {
 			  "type": "font",
+			  "characterRegex": "[Ddays0-9\\s]",
 			  "defName": "FONT_APPLE_BOLD_30",
 			  "file": "fonts/MyriadPro-Bold.ttf"
 			  }
