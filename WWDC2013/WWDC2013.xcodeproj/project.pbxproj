@@ -115,7 +115,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = A7D7A835175A62DB00B56101 /* Build configuration list for PBXProject "WWDC 2013 Countdown" */;
+			buildConfigurationList = A7D7A835175A62DB00B56101 /* Build configuration list for PBXProject "WWDC2013" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,7 +179,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7D7A835175A62DB00B56101 /* Build configuration list for PBXProject "WWDC 2013 Countdown" */ = {
+		A7D7A835175A62DB00B56101 /* Build configuration list for PBXProject "WWDC2013" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7D7A836175A62DB00B56101 /* Debug */,
