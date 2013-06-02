@@ -21,7 +21,7 @@
 			  },
 			  {
 			  "type": "font",
-			  "characterRegex": "[Ddays0-9\\s]",
+			  "characterRegex": "[a-zA-Z0-9\\s+\\-]",
 			  "defName": "FONT_APPLE_BOLD_30",
 			  "file": "fonts/MyriadPro-Bold.ttf"
 			  }

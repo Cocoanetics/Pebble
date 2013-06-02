@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXFileReference section */
-		A7D7A83D175A634300B56101 /* WWDC2013_Countdown_Watch.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = WWDC2013_Countdown_Watch.c; sourceTree = "<group>"; };
+		A7D7A83D175A634300B56101 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		A7D7A84F175A731600B56101 /* resource_map.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = resource_map.json; sourceTree = "<group>"; };
 		A7D7A850175A731600B56101 /* wscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wscript; sourceTree = "<group>"; };
 		A7D7A853175A7F7200B56101 /* MyriadPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.ttf"; sourceTree = "<group>"; };
@@ -37,6 +37,9 @@
 		A7D7A86F175B483700B56101 /* pebble_fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pebble_fonts.h; sourceTree = "<group>"; };
 		A7D7A870175B483700B56101 /* pebble_os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pebble_os.h; sourceTree = "<group>"; };
 		A7D7A871175B483700B56101 /* pebble_os.h.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pebble_os.h.orig; sourceTree = "<group>"; };
+		A7D7A872175B710600B56101 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		A7D7A873175B72C800B56101 /* time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = time.c; sourceTree = "<group>"; };
+		A7D7A874175B72D800B56101 /* time.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -52,9 +55,12 @@
 		A7D7A83C175A634300B56101 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				A7D7A872175B710600B56101 /* global.h */,
 				A7D7A859175A8F0D00B56101 /* mini-printf.h */,
 				A7D7A858175A8F0D00B56101 /* mini-printf.c */,
-				A7D7A83D175A634300B56101 /* WWDC2013_Countdown_Watch.c */,
+				A7D7A874175B72D800B56101 /* time.h */,
+				A7D7A873175B72C800B56101 /* time.c */,
+				A7D7A83D175A634300B56101 /* main.c */,
 			);
 			path = src;
 			sourceTree = "<group>";
